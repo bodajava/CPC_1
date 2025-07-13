@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ============ vendor / helpers ============ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPC — Demo</title>
+
+    <!-- AOS (Animate‑On‑Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Project & vendor styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ===========================================================
+         HOME / NAV
+    ============================================================ -->
+    <section id="Home" class="Home">
+      <!-- ----- header image & slider ----- -->
+      <header>
+        <div class="header-img" data-aos="fade-in">
+          <div class="bg-slide"></div>
+
+          <button id="prev" class="slider-arrow left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next" class="slider-arrow right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- ----- navbar ----- -->
+      <nav
+        id="mainNavbar"
+        class="navbar navbar-expand-lg bg-body-tertiary rounded-start-5 rounded-end-5 pt-3 pb-3"
+        style="background-color: #0009 !important"
+        data-aos="slide-down"
+        data-aos-delay="200"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="w-75 pe-5" src="img/logo.png" alt="logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              id="color-url"
+              class="navbar-nav ms-lg-auto mb-2 mb-lg-0 custom-nav"
+            >
+              <li class="nav-item">
+                <a class="nav-link active me-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#Motor-Oils">Motor Oils</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#Industrial-Lubricants"
+                  >Industrial Lubricants</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#Chemicals">Chemicals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#Bunkerings">Bunkerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Wayak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fuel Stations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ===========================================================
+         MOTOR OILS
+    ============================================================ -->
+    <section
+      id="Motor-Oils"
+      class="pt-5"
+      style="
+        background: linear-gradient(to top, rgba(128, 128, 128, 0.24), #fff);
+      "
+    >
+      <div class="container">
+        <div class="text-center pt-5 etxt foooont">
+          <h2 class="h1-fonts" data-aos="fade-up">Motor Oils</h2>
+          <p class="undeline_text text" data-aos="fade-up" data-aos-delay="100">
+            High‑performance, durable, reliable, synthetic, clean, protective.
+          </p>
+        </div>
+
+        <div class="row align-items-center mt-4">
+          <div class="col-md-7">
+            <p class="paragraoh" data-aos="fade-right">
+              CPC OilS are produced under efficient programed control system in
+              the chemical labs which are equipped by the latest equipment.
+            </p>
+            <p class="paragraoh" data-aos="fade-right" data-aos-delay="100">
+              If any more detailed information or clarification is required on
+              the products listed or not covered, CO‑OP marketing & Sales
+              division will be happy to provide this to any customer and follow
+              up with free technical assistance where necessary.
+            </p>
+          </div>
+
+          <div class="col-md-5 text-center" data-aos="zoom-in">
+            <img
+              class="w-100 shadow"
+              src="img/1718957243_motor-oils.jpg"
+              alt="Motor oils"
+            />
+          </div>
+
+          <!-- ---- cards ---- -->
+          <div class="card-wrapper mt-4">
+            <!-- card example -->
+            <div class="card rounded-5" data-aos="flip-left">
+              <div class="card-image-container rounded-5">
+                <img
+                  class="card-img"
+                  src="img/electric-sports-car-charging-at-night-in-the-rain-photo.webp"
+                  alt="auto"
+                />
+              </div>
+              <p class="card-title">AUTOMOTIVE OILS</p>
+              <p class="card-des pb-5">
+                Made for smooth engine performance… (etc)
+              </p>
+            </div>
+            <!-- … repeat the rest من غير تغيير شكل -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         INDUSTRIAL LUBRICANTS
+    ============================================================ -->
+    <section id="Industrial-Lubricants" class="Industrial Lubricants">
+      <div class="container text-center pt-5">
+        <h2
+          class="h1-font pt-5 undeline_text"
+          style="color: #000"
+          data-aos="fade-up"
+        >
+          Industrial Lubricants
+        </h2>
+      </div>
+
+      <!-- Counters bg image -->
+      <div class="container-fluid img_cont mt-5">
+        <div class="container position-relative">
+          <div class="row align-items-center g-4">
+            <div class="col-6 col-sm-4 col-lg-3" data-aos="fade-up">
+              <!-- counter 1 -->
+            </div>
+            <div
+              class="col-6 col-sm-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <!-- counter 2 -->
+            </div>
+            <div
+              class="col-6 col-sm-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <!-- counter 3 -->
+            </div>
+            <div
+              class="col-6 col-sm-4 col-lg-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <!-- counter 4 -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- image + description -->
+      <div class="container">
+        <div class="row mt-5 align-items-center">
+          <div class="col-md-5 mb-4 mb-md-0" data-aos="zoom-out-right">
+            <img
+              width="120%"
+              src="img/image.png"
+              alt="gear‑oil"
+              class="shadow rounded-5"
+            />
+          </div>
+          <div class="col-md-7" data-aos="zoom-out-left" data-aos-delay="100">
+            <!-- النص كما هو -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         CHEMICALS MASONRY
+    ============================================================ -->
+    <section id="Chemicals" class="Chemicals">
+      <div class="text-center pt-5">
+        <h2
+          class="h1-font pt-5 undeline_text"
+          style="color: #000"
+          data-aos="fade-up"
+        >
+          Chemicals
+        </h2>
+      </div>
+
+      <div class="container py-5">
+        <div class="cards-masonry">
+          <div class="bgblue" data-aos="fade-up">
+            <div class="ca">
+              <h4>Radiator Coolant</h4>
+              …
+            </div>
+          </div>
+          <div class="bgblue" data-aos="fade-up" data-aos-delay="100">
+            <div class="ca">…</div>
+          </div>
+          <div class="bgblue" data-aos="fade-up" data-aos-delay="200">
+            <div class="ca">…</div>
+          </div>
+          <div class="bgblue" data-aos="fade-up" data-aos-delay="300">
+            <div class="ca">…</div>
+          </div>
+          <div class="bgblue" data-aos="fade-up" data-aos-delay="400">
+            <div class="ca">…</div>
+          </div>
+          <div class="bgblue" data-aos="fade-up" data-aos-delay="500">
+            <div class="ca">…</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         BUNKERINGS
+    ============================================================ -->
+    <section id="Bunkerings">
+      <div class="text-center pt-5">
+        <h2 class="h1-font pt-5" style="color: #000" data-aos="fade-up">
+          Bunkerings
+        </h2>
+        <p class="undeline_texttt text" data-aos="fade-up" data-aos-delay="100">
+          67 Years Bunkering
+        </p>
+      </div>
+
+      <div class="firs_imgg" data-aos="fade-in">
+        <div class="overlay-content" data-aos="zoom-in" data-aos-delay="200">
+          <h2 class="display-6 fw-bold mb-3 mt-4">CPC Bunker</h2>
+          <p class="lead mb-4">
+            CPC has been a physical supplier… (rest of text)
+          </p>
+          <button class="button mb-4">
+            <span class="text">Learn More</span><span class="svg">…</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===========================================================
+         SCRIPTS
+    ============================================================ -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- AOS library + initialisation -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // مدة الحركة
+        offset: 120, // متى تبدأ
+        once: true, // لا تكرر عند التمرير صعوداً
+      });
+    </script>
+  </body>
+</html>

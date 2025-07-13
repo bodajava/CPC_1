@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="Home">
+      <header>
+        <!-- ============================header section================================== -->
+        <div class="header-img">
+          <div class="bg-slide"></div>
+
+          <button id="prev" class="slider-arrow left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next" class="slider-arrow right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+          </div>
+        </div>
+        <div class="slider-icon"></div>
+      </header>
+
+      <!-- =================================Home section======================================== -->
+      <nav
+        style="background-color: #00000091 !important"
+        id="mainNavbar"
+        class="navbar navbar-expand-lg bg-body-tertiary rounded-start-5 rounded-end-5"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="w-75 pe-5" src="img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span style="color: red !important" class="navbar-toggler-icon"
+              ><i class=""></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              id="color-url"
+              class="navbar-nav ml-auto mb-2 mb-lg-0 custom-nav"
+            >
+              <li class="nav-item">
+                <a class="nav-link active me-2" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Fuel Stations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Motor Oils</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Industrial Lubricants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Chemicals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Bunkerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Wayak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="fUEL STATIONS h-100">
+      <div class="container z-1 position-relative pt-4">
+        <div class="row">
+          <div class="col-12 px-0">
+            <div class="item">
+              <!-- القائمة المنسدلة -->
+              <select class="form-select" aria-label="اختر من القائمة">
+                <option selected>--Select--</option>
+                <option value="1">السودان</option>
+                <option value="2">اسكندريه</option>
+                <option value="3">الاقصر</option>
+                <option value="4">الاسماعليه</option>
+                <option value="5">البحر الاحمر</option>
+                <option value="6">البحيره</option>
+                <option value="7">الجيزه</option>
+                <option value="8">الدقهليه</option>
+                <option value="9">السويس</option>
+                <option value="10">الشرقيه</option>
+                <option value="11">الغربيه</option>
+                <option value="12">الفيوم</option>
+                <option value="13">القاهره</option>
+                <option value="14">القليوبيه</option>
+                <option value="15">المنوفيه</option>
+                <option value="16">المنيا</option>
+                <option value="17">الوادي الجديد</option>
+                <option value="18">بني سويف</option>
+                <option value="19">بورسعيد</option>
+                <option value="20">دمياط</option>
+                <option value="21">سوهاج</option>
+                <option value="22">سينأ الجنوبيه</option>
+                <option value="23">سينأ الشماليه</option>
+                <option value="24">قنا</option>
+                <option value="25">كفر الشيخ</option>
+                <option value="26">مرسي مطروح</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

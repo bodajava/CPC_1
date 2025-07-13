@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* <!-- ============================header section================================== --> */
+
+.header-img {
+  background-image: url(../img/1739296959_476190554_122110456322727096_4814193811120753855_n.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  z-index: 1;
+}
+
+.header-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#color-url li a {
+  color: white !important;
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+/* تأثير hover و active لأزرار النافبار */
+#color-url .nav-link {
+  color: white !important;
+  border: 2px solid transparent;
+  border-radius: 30px;
+
+  transition: all 0.3s ease;
+}
+
+#color-url .nav-link:hover,
+#color-url .nav-link.active {
+  border: 2px solid #009ad8 !important;
+  color: #009ad8 !important;
+}

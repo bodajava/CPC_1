@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="Home" class="Home">
+      <header>
+        <!-- ============================header section================================== -->
+        <div class="header-img">
+          <div class="bg-slide"></div>
+
+          <button id="prev" class="slider-arrow left">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button id="next" class="slider-arrow right">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+          </div>
+        </div>
+        <div class="slider-icon"></div>
+      </header>
+
+      <!-- =================================Home section======================================== -->
+      <nav
+        style="background-color: #00000091 !important"
+        id="mainNavbar"
+        class="navbar navbar-expand-lg bg-body-tertiary rounded-start-5 rounded-end-5"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="w-75 pe-5" src="img/logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span style="color: red !important" class="navbar-toggler-icon"
+              ><i class=""></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              id="color-url"
+              class="navbar-nav ml-auto mb-2 mb-lg-0 custom-nav"
+            >
+              <li class="nav-item">
+                <a class="nav-link active me-2" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#Motor-Oils">Motor Oils</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Industrial Lubricants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Chemicals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Bunkerings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Wayak</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2" href="#">Fuel Stations</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section
+      class="pt-5"
+      
+      id="Motor-Oils"
+    >
+      <div class="container">
+        <div class="row >
+          <div class="col-xl-5 c0l-md-5">
+            <div class="item-s-2">
+              <div class="fonts">
+                        <div class="text-center pt-5 etxt foooont">
+                        <h2 class="h1-fonts">Motor Oile</h2>
+                        <p class="undeline_text text">High-performance, durable, reliable, synthetic, clean, protective.</p>
+                        </div>
+              </div>
+              <div class="about-info">
+                  
+              </div>
+              <div class="img-Motor-Oile">
+                <img class="w-50 pt-4" src="img/1718957243_motor-oils.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row">
+      <div class="col-xxl-5 col-lg-2">
+        <div class="item-s-1">
+
+        </div>
+      </div>
+    </div> -->
+      </div>
+    </section>
+    <script src="js/index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

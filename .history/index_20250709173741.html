@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wether</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <div id="container" class="container-fluid">
+      <nav
+        id="nav"
+        class="container navbar navbar-expand-lg bg-body-tertiary pt-0 pb-0"
+        data-aos="fade-down"
+      >
+        <div class="container-fluid">
+          <a id="margen" class="navbar-brand" href="#">SMART LOGIN</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="pt-5 text-white" data-aos="fade-up">
+        <div class="container text-center">
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Welcome to Weather App
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Find your location and check the weather forecast
+          </p>
+        </div>
+      </section>
+
+      <section class="py-5" data-aos="fade-up">
+        <div class="container z-1 position-relative pt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="item ps-5" data-aos="fade-up" data-aos-delay="100">
+                <form class="find-location" action="">
+                  <input
+                    class="input-1 w-100"
+                    type="text"
+                    placeholder="find your location"
+                    id="search"
+                  />
+                  <input
+                    class="btn btn-primary mt-2"
+                    type="button"
+                    value="Search"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" data-aos="fade-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 p-0">
+              <div
+                class="forecast-container rounded-start-3 mb-5"
+                data-aos="fade-in"
+              >
+                <div class="forecast-header">
+                  <span class="day">Tuesday</span>
+                  <span class="date">24 June</span>
+                </div>
+                <div class="today-forecast">
+                  <div class="icon"><img src="images/sun.png" alt="" /></div>
+                  <div class="temp">32&#8451;</div>
+                </div>
+              </div>
+            </div>
+            <!-- كرر للأيام التالية حسب الحاجة -->
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>
