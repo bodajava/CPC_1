@@ -1,9 +1,7 @@
-# Ignore node_modules folder
 node_modules/
-
-# Ignore log files
-*.log
-
-# Ignore system files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
 .DS_Store
-Thumbs.db
